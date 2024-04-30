@@ -1,7 +1,7 @@
 const { Builder } = require("selenium-webdriver");
 const driver = new Builder().forBrowser("chrome").build();
 
-export default async function alterarParagrafos() {
+async function alterarParagrafos() {
   await driver.get(
     "https://guilhermemuller.com.br/ead/html-css-na-pratica/pagina-html-basica"
   );
@@ -13,7 +13,7 @@ export default async function alterarParagrafos() {
   }
 }
 
-export default function alterarTextoParagrafos() {
+function alterarTextoParagrafos() {
   const paragrafos = document.querySelectorAll("p");
 
   paragrafos.forEach((paragrafo) => {
