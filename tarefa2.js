@@ -11,7 +11,7 @@ async function alterarParagrafos() {
   } catch (error) {
     console.error("Ocorreu um erro ao encontrar os elementos <p>:", error);
   }
-}
+};
 
 function alterarTextoParagrafos() {
   const paragrafos = document.querySelectorAll("p");
@@ -19,6 +19,6 @@ function alterarTextoParagrafos() {
   paragrafos.forEach((paragrafo) => {
     paragrafo.textContent = "Texto alterado";
   });
-}
+};
 
 alterarParagrafos();
